@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/ghost.css">
+        <script src="../node_modules/angular/angular.js"></script>
+        <script src="../js/ghost.js"></script>
+    </head>
+    <body>
+
+    <div ng-controller="AppCtrl" ng-cloak="" ng-app="MyApp">
+        Word: {{word}}
+        <button ng-click="updateWord()">
+            Update
+        </button>
+
+        <input type="text" name="nextCharacter" ng-model="nextChar" maxlength="1">
+    </div>
+  
+    </body>
+</html>
+  <!--
+  Copyright 2016 Google Inc. All Rights Reserved. 
+  Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
+  -->
